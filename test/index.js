@@ -75,8 +75,8 @@ check()
 check()
 
 fold()
-check()
-check()
+raise(-1, 20)
+call()
 
 check()
 check()

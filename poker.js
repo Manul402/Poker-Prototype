@@ -52,6 +52,7 @@ class poker{
                 this.players.set(a.id, a)
             })
             this.q = this.startQ
+            if(this.getPlayer(this.startQ))this.skipNonStackPlayers()
             return true
         }
         return false
@@ -213,7 +214,7 @@ class poker{
                 i = this.q
                 if(!res){
                     result = {state: "New circle"}
-                }else return res
+                }else result = res
             }
             i++
         }
