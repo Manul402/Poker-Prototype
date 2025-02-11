@@ -15,7 +15,7 @@ class poker{
     bigBlind = 20
     players = new Map() 
     isRaise = -1
-    random = Math.random()
+    random = Math.random
     constructor(players, params){
         let {startStack, bigBlind, smallBlind, random} = params
         this.bigBlind = bigBlind || this.bigBlind
